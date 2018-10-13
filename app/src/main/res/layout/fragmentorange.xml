@@ -13,6 +13,12 @@
         android:layout_centerHorizontal="true"
         />
     <TextView
+        android:id="@+id/database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
         android:id="@+id/appname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

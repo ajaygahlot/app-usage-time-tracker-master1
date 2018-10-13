@@ -1,4 +1,4 @@
-package com.quirodev;
+package com.quirodev.usagestatsmanagersample;
 
 import android.annotation.TargetApi;
 import android.app.AlarmManager;
@@ -78,7 +78,7 @@ public class GrapesFragment extends Fragment {
 
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity());
-        builder.setSmallIcon(R.drawable.image1)
+        builder.setSmallIcon(R.drawable.ic_launcher)
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher))
                 .setColor(getResources().getColor(R.color.colorPrimary))
                 .setContentTitle(getString(R.string.close))

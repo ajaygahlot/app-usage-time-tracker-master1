@@ -117,7 +117,8 @@ MainActivity extends AppCompatActivity implements UsageContract.View {
         dividerItemDecoration.setDrawable(getResources().getDrawable(R.drawable.divider, getTheme()));
         recyclerView.addItemDecoration(dividerItemDecoration);
 
-        adapter = new UsageStatAdapter();
+
+        adapter = new UsageStatAdapter(this);
 
         recyclerView.setAdapter(adapter);
 

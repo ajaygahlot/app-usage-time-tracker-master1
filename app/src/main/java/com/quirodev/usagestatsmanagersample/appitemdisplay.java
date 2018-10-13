@@ -21,7 +21,7 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.quirodev.GrapesFragment;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,12 +37,6 @@ public class appitemdisplay extends AppCompatActivity {
     public static String usagetime1;
     public String pkname;
     Intent intent=getIntent();
-    private int[] tabIcons = {
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3,
-    };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,14 +62,11 @@ public class appitemdisplay extends AppCompatActivity {
                     Intent intent=getIntent();
                     if (intent!=null){
                         appname1=intent.getStringExtra(abc);
-                        // String pkname;
                         pkname=intent.getStringExtra(pkname1);
                         String usage = intent.getStringExtra(usagetime1);
-                        //Log.v("testing1",pkname);
-
                         Bundle bundle = new Bundle();
                         bundle.putString("usage", usage );
-                        bundle.putString("appname", appname1 );
+                        bundle.putString("appname1", appname1 );
                         bundle.putString("pkname", pkname );
                         Bundle extras=intent.getExtras();
                         bundle.putBundle("extras",extras);

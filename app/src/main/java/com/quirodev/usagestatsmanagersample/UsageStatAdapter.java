@@ -1,5 +1,8 @@
+
 package com.quirodev.usagestatsmanagersample;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,9 +16,12 @@ import java.util.List;
 public class UsageStatAdapter extends RecyclerView.Adapter<UsageStatVH> {
 
     private List<AppItem1> list;
+    Activity mcontext;
 
     //it will not rerquire any extral list beacuse adapter has been provided with the list in mainactivity with setlist() method
-    public UsageStatAdapter(){
+    public UsageStatAdapter(Activity context){
+
+        mcontext=context;
         list = new ArrayList<>();
     }
 
@@ -27,7 +33,7 @@ public class UsageStatAdapter extends RecyclerView.Adapter<UsageStatVH> {
 
     @Override
     public void onBindViewHolder(UsageStatVH holder, int position) {
-        holder.bindTo(list.get(position));
+        holder.bindTo(mcontext,list.get(position));
     }
 
     @Override
