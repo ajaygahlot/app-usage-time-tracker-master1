@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_white"
+        android:title="Settings"/>
+    <item android:id="@+id/ignore"
+        android:icon="@drawable/ic_clear_black"
+        android:title="Ignore Activity"/>
+    <item android:id="@+id/notification"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notfication History"/>
+    <item android:id="@+id/age"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Age Prediction"/>
+</menu>
